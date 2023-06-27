@@ -8,12 +8,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        general: ['var(--font-general)'],
+        montserrat: ['var(--font-montserrat)']
+      },
       backgroundImage: {
         'banner-hero': 'url("/banner1.jpg")',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'snow': '#FCFCFC',
+        'orange': '#F38D39'
+      }
     },
   },
   plugins: [],

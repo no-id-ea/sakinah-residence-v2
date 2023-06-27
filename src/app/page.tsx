@@ -4,7 +4,12 @@ import { Banner } from '@/views'
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-h-screen">
-      <Banner title="Welcome to my Next.js app!" owner="by: @josephmtinangi" />
+      <Banner 
+        title="Menikmati Asri dan Indahnya"
+        subtitle="Hunian yang Harmonis"
+        owner="Karya Cipta Sakinah"
+        buttonText="Jelajahi Sekarang"
+      />
     </main>
   )
 }
