@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       fontFamily: {
         general: ['var(--font-general)'],
-        montserrat: ['var(--font-montserrat)']
+        montserrat: ['var(--font-montserrat)'],
+        lato: ['var(--font-lato)'],
       },
       backgroundImage: {
         'banner-hero': 'url("/banner1.jpg")',
@@ -21,6 +22,14 @@ module.exports = {
       colors: {
         'snow': '#FCFCFC',
         'orange': '#F38D39'
+      },
+      textStyles: {
+        'heading-1': 'font-general font-semibold text-[64px]',
+        'heading-2': 'font-lato font-bold text-[48px]',
+        'heading-3': 'font-lato font-medium text-[28px]',
+        'body-1': 'font-lato font-medium text-[24px]',
+        'body-2': 'font-lato font-normal text-[20px]',
+        'body-3': 'font-montserrat font-semibold text-[18px]',
       }
     },
   },

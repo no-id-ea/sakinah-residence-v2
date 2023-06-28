@@ -1,6 +1,5 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import { Montserrat } from "next/font/google"
 
 const generalSans = localFont({
   src: [
@@ -23,11 +22,38 @@ const generalSans = localFont({
   variable: "--font-general",
 });
 
-const montserrat = Montserrat({
-  weight: '600',
-  subsets: ['latin'],
-  variable: '--font-montserrat'
+const montserrat = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Montserrat-SemiBold.ttf",
+      weight: "600",
+      style: "normal"
+    },
+  ],
+  variable: "--font-montserrat"
 })
+
+const lato = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Lato-Regular.ttf",
+      weight: "400",
+      style: "normal"
+    },
+    {
+      path: "../../public/fonts/Lato-Medium.ttf",
+      weight: "500",
+      style: "normal"
+    },
+    {
+      path: "../../public/fonts/Lato-Bold.ttf",
+      weight: "700",
+      style: "normal"
+    }
+  ],
+  variable: "--font-lato"
+})
+
 
 export const metadata = {
   title: "Create Next App",
@@ -41,7 +67,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`w-full h-full ${generalSans.variable}`}>{children}</body>
+      <body className={`w-full h-full ${generalSans.variable} ${montserrat.variable} ${lato.variable}`}>{children}</body>
     </html>
   );
 }
