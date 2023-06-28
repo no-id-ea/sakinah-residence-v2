@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Banner } from '@/views'
+import { Banner, Info } from '@/views'
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
         owner="Karya Cipta Sakinah"
         buttonText="Jelajahi Sekarang"
       />
+      <Info />
     </main>
   )
 }

@@ -1,4 +1,4 @@
-import { navigations, textStyles } from "@/constants";
+import { navigations } from "@/constants";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link
             key={nav.name}
             href={nav.path}
-            className={`pr-[32px] ${textStyles["body-1"]} hover:font-bold duration-75 ease-in-out`}
+            className="pr-[32px] font-lato font-medium text-[24px] hover:font-bold duration-75 ease-in-out"
           >
             {nav.name}
           </Link>

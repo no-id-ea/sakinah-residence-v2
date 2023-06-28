@@ -21,7 +21,9 @@ module.exports = {
       },
       colors: {
         'snow': '#FCFCFC',
-        'orange': '#F38D39'
+        'orange': '#F38D39',
+        'shadow': "#121212",
+        'wood': '#F5F3EB'
       },
       textStyles: {
         'heading-1': 'font-general font-semibold text-[64px]',
