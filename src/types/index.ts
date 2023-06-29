@@ -11,3 +11,14 @@ export interface InfoSideProps {
     image: string;
     reverse: boolean;
 }
+
+export interface ProductCardProps {
+    title: string;
+    description: string;
+    image: string;
+}
+
+export interface QnaProps {
+    question: string;
+    answer: string;
+}

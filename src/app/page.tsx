@@ -1,16 +1,13 @@
 import Image from 'next/image'
-import { Banner, Info } from '@/views'
+import { Banner, Info, Product, Faq } from '@/views'
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-h-screen">
-      <Banner 
-        title="Menikmati Asri dan Indahnya"
-        subtitle="Hunian yang Harmonis"
-        owner="Karya Cipta Sakinah"
-        buttonText="Jelajahi Sekarang"
-      />
+      <Banner/>
       <Info />
+      <Product />
+      <Faq />
     </main>
   )
 }

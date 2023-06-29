@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link
             key={nav.name}
             href={nav.path}
-            className="pr-[32px] font-lato font-medium text-[24px] hover:font-bold duration-75 ease-in-out"
+            className="pr-[32px] font-lato font-medium text-[24px] hover:font-bold duration-75 text-snow ease-in-out"
           >
             {nav.name}
           </Link>
