@@ -67,7 +67,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`w-full h-full ${generalSans.variable} ${montserrat.variable} ${lato.variable}`}>{children}</body>
+      <body className={`flex flex-col w-full h-full items-center justify-center ${generalSans.variable} ${montserrat.variable} ${lato.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
