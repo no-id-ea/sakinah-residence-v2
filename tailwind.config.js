@@ -27,6 +27,7 @@ module.exports = {
         shadow: "#121212",
         wood: "#F5F3EB",
         "wood-2": "#EDE8D9",
+        furniture: "#311C0B",
         gandalf: "#4F4F4F",
       },
       textStyles: {

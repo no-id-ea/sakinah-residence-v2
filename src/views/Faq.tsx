@@ -3,7 +3,7 @@ import { faqs } from "@/constants";
 
 const Faq = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full py-10 space-y-5 bg-gradient-to-br from-wood to-wood-2">
+    <div className="flex flex-col items-center justify-center w-full h-full py-20 space-y-5 gradient-product">
       <h2 className="font-lato font-bold text-[48px] text-shadow text-center">
         Pertanyaan yang Sering Diajukan
       </h2>
