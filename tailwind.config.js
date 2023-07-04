@@ -24,6 +24,7 @@ module.exports = {
         snow: "#FCFCFC",
         "snow-2": "#F2F2F2",
         orange: "#F38D39",
+        "orange-2": "#BC5B0B",
         shadow: "#121212",
         wood: "#F5F3EB",
         "wood-2": "#EDE8D9",

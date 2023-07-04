@@ -29,6 +29,33 @@ export const navigations = [
     }
 ]
 
+export const links = [
+    {
+        name: 'About Us',
+        path: '/about-us'
+    },
+    {
+        name: 'Products',
+        path: '/products'
+    },
+    {
+        name: 'Facilities',
+        path: '/facilities'
+    },
+    {
+        name: 'Location',
+        path: '/location'
+    },
+    {
+        name: 'Promo',
+        path: '/promo'
+    },
+    {
+        name: 'Contact',
+        path: '/contact'
+    }
+]
+
 export const bannerText = {
     owner: 'Karya Cipta Sakinah',
     title: 'Menikmati Asri dan Indahnya Hunian yang Harmonis',

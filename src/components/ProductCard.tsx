@@ -17,7 +17,7 @@ const ProductCard = ({ title, description, image }: ProductCardProps) => {
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-center w-full space-x-2 max-w-350 bg-orange rounded-[5px] py-[12px]">
+      <div className="flex flex-row items-center justify-center w-full space-x-2 cursor-pointer max-w-350 bg-orange rounded-[5px] py-[12px] hover:bg-orange-2 duration-150 transition-all ease-in-out">
         <BsWhatsapp className="text-[20px] text-snow" />
         <span className="font-montserrat font-semibold text-[18px] text-snow">
           TANYA MARKETING

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Banner, Info, Product, Faq, Branding } from '@/views'
+import { Banner, Info, Product, Faq, Branding, Footer } from '@/views'
 import { Navbar } from '@/components'
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <Product />
       <Faq />
       <Branding />
+      <Footer />
     </>
   )
 }

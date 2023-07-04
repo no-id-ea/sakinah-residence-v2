@@ -14,7 +14,7 @@ const Banner = () => {
             {bannerText.title}
           </h1>
         </div>
-        <button className="py-[20px] px-[16px] bg-orange rounded-[5px] mt-[68px] font-montserrat font-semibold text-[18px]">
+        <button className="py-[20px] px-[16px] bg-orange rounded-[5px] mt-[68px] font-montserrat font-semibold text-[18px] hover:bg-orange-2 duration-150 transition-all ease-in-out">
           {bannerText.buttonText}
         </button>
       </div>
