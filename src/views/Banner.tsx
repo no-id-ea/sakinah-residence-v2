@@ -1,7 +1,5 @@
 import { bannerText } from "@/constants";
 
-import { Navbar } from "@/components";
-
 const Banner = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen bg-center bg-cover max-h-[1000px] text-snow bg-banner-hero">

@@ -1,11 +1,14 @@
-import { navigations } from "@/constants";
-
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
 
-const Navbar = () => {
+import { navigations } from "@/constants";
+import { NavbarProps } from "@/types";
+
+
+const Navbar = ({ activeNav }: NavbarProps) => {
   return (
-    <header className="fixed top-0 z-10 flex items-center justify-center w-full backdrop-blur-3xl">
+    <header className="fixed top-0 z-10 flex items-center justify-center w-full backdrop-blur-3xl bg-snow-3">
       <nav className="flex flex-row items-center justify-between w-full max-w-[1440px] px-10">
         <Link href={"/"}>
           <Image
@@ -22,9 +25,11 @@ const Navbar = () => {
             <Link
               key={nav.name}
               href={nav.path}
-              className="pr-[32px] font-lato font-medium text-[24px] hover:font-bold duration-150 transition-all text-snow ease-in-out"
+              className="pr-[32px] font-lato font-medium text-[24px] group text-shadow"
             >
-              {nav.name}
+              <span className={`transition-all duration-150 ease-in  ${activeNav === nav.path ? "font-semibold border-b-2 border-b-shadow" : "group-hover:border-b-2 group-hover:border-b-shadow"}`}>
+                {nav.name}
+              </span>
             </Link>
           ))}
         </div>

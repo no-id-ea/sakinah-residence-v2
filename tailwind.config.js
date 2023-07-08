@@ -23,6 +23,7 @@ module.exports = {
       colors: {
         snow: "#FCFCFC",
         "snow-2": "#F2F2F2",
+        "snow-3": "#F4F4F4",
         orange: "#F38D39",
         "orange-2": "#BC5B0B",
         shadow: "#121212",
@@ -30,14 +31,6 @@ module.exports = {
         "wood-2": "#EDE8D9",
         furniture: "#311C0B",
         gandalf: "#4F4F4F",
-      },
-      textStyles: {
-        "heading-1": "font-general font-semibold text-[64px]",
-        "heading-2": "font-lato font-bold text-[48px]",
-        "heading-3": "font-lato font-medium text-[28px]",
-        "body-1": "font-lato font-medium text-[24px]",
-        "body-2": "font-lato font-normal text-[20px]",
-        "body-3": "font-montserrat font-semibold text-[18px]",
       },
     },
   },

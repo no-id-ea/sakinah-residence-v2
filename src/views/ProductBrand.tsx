@@ -1,21 +1,9 @@
-import { ProductCard, YellowButton } from "@/components";
+import { ProductCard } from "@/components";
 import { product, products } from "@/constants";
-import { BsWhatsapp } from "react-icons/bs";
 
-const AskMarketing = () => {
+const ProductBrand = () => {
   return (
-    <YellowButton>
-      <BsWhatsapp className="text-[20px] text-snow" />
-      <span className="font-montserrat font-semibold text-[18px] text-snow">
-        TANYA MARKETING
-      </span>
-    </YellowButton>
-  );
-};
-
-const Product = () => {
-  return (
-    <section className="flex flex-col items-center justify-start w-full h-full pt-20 max-h-[1500px] gradient-product">
+    <section className="flex flex-col items-center justify-start w-full h-full py-20 max-h-[1500px] gradient-product">
       <div className="flex flex-col w-full max-w-[1440px] items-center pb-32 px-10">
         <h2 className="font-lato font-bold text-[48px] text-shadow text-center pb-10">
           {product.title}
@@ -32,13 +20,11 @@ const Product = () => {
             title={item.title}
             description={item.description}
             image={item.image}
-          >
-            <AskMarketing />
-          </ProductCard>
+          />
         ))}
       </div>
     </section>
   );
 };
 
-export default Product;
+export default ProductBrand;

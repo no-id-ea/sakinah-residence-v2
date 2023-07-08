@@ -5,7 +5,7 @@ import { Navbar } from '@/components'
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar activeNav='/'/>
       <Banner/>
       <Info />
       <Product />
