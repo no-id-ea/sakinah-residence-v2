@@ -1,18 +1,17 @@
-import Image from 'next/image'
 import { Metadata } from 'next'
-import { BannerProduct, ProductBrand, Footer } from '@/views'
+import { CustomBanner, ProductBrand, Footer } from '@/views'
 import { Navbar } from '@/components'
 
 export const metadata: Metadata = {
-  title: "Products | Sakinah Residence",
+  title: "Products - Sakinah Residence",
   description: "This is sakinah residence products",
 }
 
-export default function Home() {
+export default function Product() {
   return (
     <>
       <Navbar activeNav='/products'/>
-      <BannerProduct />
+      <CustomBanner title='Produk' />
       <ProductBrand />
       <Footer />
     </>

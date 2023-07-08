@@ -36,3 +36,12 @@ export interface YellowButtonProps {
     children: React.ReactNode;
     onClick?: () => void;
 }
+
+export interface CustomBannerProps {
+    title: string;
+}
+
+export interface FacilitiesCardProps {
+    title: string;
+    image: string;
+}

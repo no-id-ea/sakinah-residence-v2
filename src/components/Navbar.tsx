@@ -8,7 +8,7 @@ import { NavbarProps } from "@/types";
 
 const Navbar = ({ activeNav }: NavbarProps) => {
   return (
-    <header className="fixed top-0 z-10 flex items-center justify-center w-full backdrop-blur-3xl bg-snow-3">
+    <header className="flex items-center justify-center w-full backdrop-blur-3xl bg-snow-3">
       <nav className="flex flex-row items-center justify-between w-full max-w-[1440px] px-10">
         <Link href={"/"}>
           <Image

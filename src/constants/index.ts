@@ -136,3 +136,22 @@ export const faqs = [
         answer: "Untuk melihat promo yang sedang berlangsung, Anda bisa mengunjungi halam promo di sini."
     }
 ]
+
+export const facilities = [
+    {
+        title: "Musholla",
+        src: "/musholla.png"
+    },
+    {
+        title: "Jalan Paving 7 Meter",
+        src: "/jalan.png"
+    },
+    {
+        title: "Gratis Warna Cat",
+        src: "/warna.png"
+    },
+    {
+        title: "Gratis Pagar Samping",
+        src: "/pagar.png"
+    }
+]
