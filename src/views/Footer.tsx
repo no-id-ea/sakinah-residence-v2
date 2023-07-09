@@ -2,7 +2,6 @@ import { links } from "@/constants";
 
 import Image from "next/image";
 import Link from "next/link";
-
 import {
   FaLocationArrow,
   FaTiktok,
@@ -52,16 +51,15 @@ const Footer = () => {
                   +62 812-3456-7890
                 </a>
               </div>
-            </div>
-
-            <div className="flex flex-row items-center justify-start space-x-2">
-              <TbMailFilled className="text-[24px]" />
-              <a
-                href="mailto:griyakusakinahku16@gmail.com"
-                className="font-lato font-normal text-[20px]"
-              >
-                griyakusakinahku16@gmail.com
-              </a>
+              <div className="flex flex-row items-center justify-start space-x-2">
+                <TbMailFilled className="text-[24px]" />
+                <a
+                  href="mailto:griyakusakinahku16@gmail.com"
+                  className="font-lato font-normal text-[20px]"
+                >
+                  griyakusakinahku16@gmail.com
+                </a>
+              </div>
             </div>
           </div>
 

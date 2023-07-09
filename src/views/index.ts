@@ -14,3 +14,5 @@ export { default as LocationMap } from './LocationMap'
 
 export { default as AboutUs } from './AboutUs'
 export { default as VideoProfile } from './VideoProfile'
+
+export { default as Contact } from './Contact'
