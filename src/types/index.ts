@@ -45,3 +45,10 @@ export interface FacilitiesCardProps {
     title: string;
     image: string;
 }
+
+export interface LocationDetailProps {
+    title: string;
+    address: string;
+    gmaps: string;
+    reverse: boolean;
+}

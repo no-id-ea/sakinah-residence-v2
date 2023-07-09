@@ -1,3 +1,5 @@
+import { LocationDetailProps } from "@/types"
+
 export const navigations = [
     {
         name: 'Home',
@@ -91,6 +93,11 @@ export const product = {
     description: 'Mengembangkan hunian perumahan dengan rumah sehat, spek hebat, dan harga hemat, sehingga terwujud pemukiman yang aman, nyaman, dan linkungan yang asri. Memberikan keupasan kepada konsumen dengan menjaga kualitas bangunan yang dapat diandalkan.'
 }
 
+export const location = {
+    title: "Karya Cipta Sakinah",
+    description: "Berlokasi berada di pusat area residential Paiton Kab. Probolinggo, berada di jalur garis pantai di bagian utara Pulau Jawa (Pantura), Karya Cipta Sakinah mempunyai fasilitas dan jalan akses yang bagus, hunian bebas polusi, mempunyai sistem keamanan 24 jam, hunian nyaman dan dari developer terpercaya."
+}
+
 export const products = [
     {
         title: 'Sakinah Residence',
@@ -155,3 +162,27 @@ export const facilities = [
         src: "/pagar.png"
     }
 ]
+
+export const locations: LocationDetailProps[] = [
+    {
+        title: "Karya Cipta Sakinah",
+        address: "Dusun Pesisir, Sumberanyar, Kec. Paiton, Kabupaten Probolinggo, Jawa Timur 67291",
+        reverse: false,
+        gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.6960209608606!2d113.51602677431313!3d-7.715729092302189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7038484881b23%3A0x481b10811d2e42c7!2sSakinah%20Residence!5e0!3m2!1sen!2sid!4v1688873361538!5m2!1sen!2sid"
+    },
+    {
+        title: "Griya Mega Sakinah",
+        address: "Dusun Krajan, Paiton, Kec. Paiton, Kabupaten Probolinggo, Jawa Timur 67291",
+        reverse: true,
+        gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.6384130568395!2d113.51054757431314!3d-7.7218884922961655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7039a0a6d6efb%3A0x59db15be0d857aec!2sPerumahan%20Griya%20Mega%20Sakinah!5e0!3m2!1sen!2sid!4v1688874925829!5m2!1sen!2sid"
+    },
+    {
+        title: "Mutiara Sakinah",
+        address: "Dusun Krajan, Sumberanyar, Kec. Paiton, Kabupaten Probolinggo, Jawa Timur 67291",
+        reverse: false,
+        gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.4201061849622!2d113.52317944338824!3d-7.7173971125581415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd703d480bcfb63%3A0x8b56076d47cb0f13!2sPerumahan%20mutiara%20sakinah!5e0!3m2!1sen!2sid!4v1688875077374!5m2!1sen!2sid"
+    }
+]
+
+
+

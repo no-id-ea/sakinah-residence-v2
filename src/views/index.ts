@@ -9,3 +9,5 @@ export { default as CustomBanner } from './CustomBanner'
 export { default as ProductBrand } from './ProductBrand'
 
 export { default as Facilities } from './Facilities'
+
+export { default as LocationMap } from './LocationMap'

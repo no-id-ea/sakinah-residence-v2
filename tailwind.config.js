@@ -28,6 +28,7 @@ module.exports = {
         "orange-2": "#BC5B0B",
         shadow: "#121212",
         wood: "#F5F3EB",
+        grey: "#4F4F4F",
         "wood-2": "#EDE8D9",
         furniture: "#311C0B",
         gandalf: "#4F4F4F",

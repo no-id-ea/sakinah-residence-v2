@@ -3,8 +3,8 @@ import { CustomBanner, Facilities as FacilitiesView, Footer } from "@/views";
 import { Navbar } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Products - Sakinah Residence",
-  description: "This is sakinah residence products",
+  title: "Facilities - Sakinah Residence",
+  description: "This is sakinah residence facilities",
 };
 
 export default function Facilities() {
