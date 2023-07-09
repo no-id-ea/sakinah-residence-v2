@@ -1,5 +1,9 @@
-import "./globals.css";
 import localFont from "next/font/local";
+import { Footer } from "@/views";
+import { Navbar } from "@/components";
+
+import { ChildrenProps } from "@/types";
+import "./globals.css";
 
 const generalSans = localFont({
   src: [
@@ -60,15 +64,13 @@ export const metadata = {
   description: "Hallo ini sakinah residence",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en">
       <body className={`flex flex-col w-full h-full items-center justify-center ${generalSans.variable} ${montserrat.variable} ${lato.variable}`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
