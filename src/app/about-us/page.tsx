@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { CustomBanner, LocationMap } from "@/views";
+import { CustomBanner, AboutUs as AboutView } from "@/views";
 
 export const metadata: Metadata = {
   title: "Locations - Sakinah Residence",
@@ -10,7 +10,7 @@ export default function AboutUs() {
   return (
     <>
       <CustomBanner title="Tentang Kami" />
-      <LocationMap />
+      <AboutView />
     </>
   );
 }

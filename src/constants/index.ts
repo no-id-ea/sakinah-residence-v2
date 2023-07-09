@@ -1,4 +1,4 @@
-import { LocationDetailProps } from "@/types"
+import { LocationDetailProps, QnaProps } from "@/types"
 
 export const navigations = [
     {
@@ -117,7 +117,7 @@ export const products = [
 
 ]
 
-export const faqs = [
+export const faqs: QnaProps[] = [
     {
         question: "Apa saja keunggulan yang didapatkan dari Karya Cipta Sakinah?",
         answer: "Keunggulan yang didapatkan dari Karya Cipta Sakinah adalah berada di pusat area residential Paiton Kab. Probolinggo, dilalui oleh jalur garis pantai di bagian utara Pulau Jawa (Pantura), mempunyai fasilitas dan jalan akses yang bagus, hunian bebas polusi, mempunyai sistem keamanan 24 jam, hunian nyaman dan dari developer terpercaya."
@@ -184,5 +184,11 @@ export const locations: LocationDetailProps[] = [
     }
 ]
 
-
+export const about = {
+    title: "“Rumah Hebat, Spek Hebat, Harga Hemat”",
+    subtitle: "Kenapa Kami Mengembangkan Karya Cipta Sakinah?",
+    description: `Ada beberapa alasan yang mendorong kami untuk mendirikan perumahan "Sakinah Residence" yang istimewa ini. Kami ingin menciptakan sebuah lingkungan yang tidak hanya menjadi tempat tinggal, tetapi juga menjadi tempat di mana kebahagiaan, ketenangan, dan kualitas hidup menjadi prioritas utama.`,
+    visi: 'Menjadi perumahan yang diakui sebagai tempat yang nyaman, harmonis, dan penuh kedamaian, di mana setiap penghuninya dapat menjalani kehidupan yang berkualitas tinggi dan bahagia.',
+    misi: 'Menjadi perumahan yang diakui sebagai tempat yang nyaman, harmonis, dan penuh kedamaian, di mana setiap penghuninya dapat menjalani kehidupan yang berkualitas tinggi dan bahagia.'
+}
 

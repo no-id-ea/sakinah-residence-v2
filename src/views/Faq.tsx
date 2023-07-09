@@ -3,7 +3,7 @@ import { faqs } from "@/constants";
 
 const Faq = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full py-20 space-y-5 gradient-product">
+    <section className="flex flex-col items-center justify-center w-full h-full py-20 space-y-5 gradient-product">
       <h2 className="font-lato font-bold text-[48px] text-shadow text-center">
         Pertanyaan yang Sering Diajukan
       </h2>
@@ -13,7 +13,7 @@ const Faq = () => {
           <Qna key={index} question={item.question} answer={item.answer} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

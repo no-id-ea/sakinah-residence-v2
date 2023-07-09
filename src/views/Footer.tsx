@@ -14,7 +14,7 @@ import { TbMailFilled } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center w-full h-full bg-center bg-no-repeat bg-cover bg-banner-hero text-snow">
+    <section className="flex items-center justify-center w-full h-full bg-center bg-no-repeat bg-cover bg-banner-hero text-snow">
       <div className="flex items-center justify-center w-full h-full bg-gradient-to-t from-furniture to-transparent">
         <div className="flex flex-row items-start justify-center w-full h-full max-w-[1440px] py-20 px-10">
           {/* Contact and Location */}
@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

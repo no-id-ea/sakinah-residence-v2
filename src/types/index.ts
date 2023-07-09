@@ -24,10 +24,6 @@ export interface QnaProps {
     answer: string;
 }
 
-export interface NavbarProps {
-    activeNav: string;
-}
-
 export interface ChildrenProps {
     children: React.ReactNode;
 }
@@ -51,4 +47,9 @@ export interface LocationDetailProps {
     address: string;
     gmaps: string;
     reverse: boolean;
+}
+
+export interface DescriptionProps {
+    title: string;
+    description: string;
 }

@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { navigations } from "@/constants";
-import { NavbarProps } from "@/types";
 
 const Navbar = () => {
   const pathname = usePathname();

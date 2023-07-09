@@ -11,3 +11,5 @@ export { default as ProductBrand } from './ProductBrand'
 export { default as Facilities } from './Facilities'
 
 export { default as LocationMap } from './LocationMap'
+
+export { default as AboutUs } from './AboutUs'
