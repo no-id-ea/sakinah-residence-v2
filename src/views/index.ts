@@ -13,3 +13,4 @@ export { default as Facilities } from './Facilities'
 export { default as LocationMap } from './LocationMap'
 
 export { default as AboutUs } from './AboutUs'
+export { default as VideoProfile } from './VideoProfile'
