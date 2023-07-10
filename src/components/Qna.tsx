@@ -3,7 +3,7 @@ import { QnaProps } from "@/types";
 const Qna = ({ question, answer }: QnaProps) => {
   return (
     <div className="bg-transparent collapse collapse-arrow text-shadow">
-      <input type="radio" name="my-accordion-2" />
+      <input type="checkbox" /> 
       <div className="collapse-title">
         <p className="font-lato font-medium text-[28px]">
           {question}

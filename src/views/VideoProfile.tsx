@@ -1,4 +1,7 @@
+import Link from "next/link";
 import { YellowButton } from "@/components";
+
+import { whatsapp } from "@/constants";
 
 const VideoProfile = () => {
   return (
@@ -14,9 +17,11 @@ const VideoProfile = () => {
               wujudkan rumah impian Anda.
             </p>
             <YellowButton>
-              <span className="font-montserrat font-semibold text-[18px] text-snow px-5 ">
-                Hubungi Kami
-              </span>
+              <Link href={whatsapp}>
+                <span className="font-montserrat font-semibold text-[18px] text-snow px-5 ">
+                  Hubungi Kami
+                </span>
+              </Link>
             </YellowButton>
           </div>
           <iframe

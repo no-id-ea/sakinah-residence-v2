@@ -54,3 +54,7 @@ export interface DescriptionProps {
     title: string;
     description: string;
 }
+
+export interface SpecificationProps {
+    name: string;
+}

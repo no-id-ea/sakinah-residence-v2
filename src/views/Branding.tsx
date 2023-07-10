@@ -1,5 +1,7 @@
-import React from "react";
 import Image from "next/image";
+import Link from "next/link"
+
+import { whatsapp } from "@/constants";
 
 const Branding = () => {
   return (
@@ -13,9 +15,9 @@ const Branding = () => {
             Jangan sia-siakan momen ini. Hubungi kami sekarang dan mari wujudkan
             rumah impian Anda.
           </p>
-          <button className="py-[20px] px-[16px] bg-orange rounded-[5px] font-montserrat font-semibold text-[18px] hover:bg-orange-2 duration-150 transition-all ease-in-out cursor-pointer">
+          <Link href={whatsapp}  className="py-[20px] px-[16px] bg-orange rounded-[5px] font-montserrat font-semibold text-[18px] hover:bg-orange-2 duration-150 transition-all ease-in-out cursor-pointer">
             Hubungi Kami
-          </button>
+          </Link>
         </div>
 
         <div className="relative w-full h-full min-h-[412px] max-h-[500px] items-center justify-center">

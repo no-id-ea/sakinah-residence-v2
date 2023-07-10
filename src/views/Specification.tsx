@@ -1,32 +1,37 @@
-import Link from "next/link";
+"use client";
+
 import { YellowButton } from "@/components";
 import { BsFileEarmarkPdfFill } from "react-icons/bs";
 
 import { specifications } from "@/constants";
+import useDownloader from "react-use-downloader";
+import { SpecificationProps } from "@/types";
 
 const Download = () => {
+  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
+    useDownloader();
+
+  const fileUrl = "/siteplan.png";
+  const filename = "siteplan.png";
   return (
-    <YellowButton>
-      <Link
-        href={"/"}
-        className="flex flex-row items-center justify-center gap-3 px-2"
-      >
+    <YellowButton onClick={() => download(fileUrl, filename)}>
+      <div className="flex flex-row items-center justify-center gap-2 px-5">
         <BsFileEarmarkPdfFill className="text-[20px] text-snow" />
         <span className="font-montserrat font-semibold text-[18px] text-snow">
           Download Brosur
         </span>
-      </Link>
+      </div>
     </YellowButton>
   );
 };
 
-const Specification = () => {
+const Specification = ({ name }: SpecificationProps) => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full py-20 bg-snow">
       <div className="flex flex-row w-full h-full max-w-[1440px] px-10 gap-20">
         <div className="flex flex-col items-start justify-start w-full h-full space-y-2">
           <h1 className="font-general font-semibold text-[64px] border-b-8 rounded-lg border-orange text-shadow">
-            Sakinah Residence
+            {name}
           </h1>
           <p className="font-lato font-medium text-[24px] text-grey">
             Selamat datang di &quot;Sakinah Residence&quot; - perumahan yang
@@ -35,7 +40,7 @@ const Specification = () => {
             rumah-rumah berkualitas tinggi yang menawarkan kenyamanan,
             fungsionalitas, dan keindahan yang tak tertandingi.
           </p>
-          <p className="font-lato font-medium text-[24px] text-grey"> 
+          <p className="font-lato font-medium text-[24px] text-grey">
             Setiap rumah di Sakinah Residence didesain dengan teliti untuk
             memberikan ruang yang luas dan fungsional bagi Anda dan keluarga.
             Tersedia berbagai pilihan tata letak yang cerdas, termasuk ruang
