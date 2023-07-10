@@ -103,16 +103,19 @@ export const products = [
         title: 'Sakinah Residence',
         description: 'Perumahan kami menawarkan spesifikasi yang menakjubkan untuk menciptakan lingkungan yang asri dan nyaman bagi para penghuninya.',
         image: '/Image-2.jpg',
+        href: '/products/sakinah-residence'
     },
     {
         title: 'Griya Mega Sakinah',
         description: 'Perumahan kami menawarkan spesifikasi yang menakjubkan untuk menciptakan lingkungan yang asri dan nyaman bagi para penghuninya.',
         image: '/Image-2.jpg',
+        href: '/products/griya-mega-sakinah'
     },
     {
         title: 'Mutiara Sakinah',
         description: 'Perumahan kami menawarkan spesifikasi yang menakjubkan untuk menciptakan lingkungan yang asri dan nyaman bagi para penghuninya.',
         image: '/Image-2.jpg',
+        href: '/products/mutiara-sakinah'
     }
 
 ]
@@ -192,3 +195,72 @@ export const about = {
     misi: 'Menjadi perumahan yang diakui sebagai tempat yang nyaman, harmonis, dan penuh kedamaian, di mana setiap penghuninya dapat menjalani kehidupan yang berkualitas tinggi dan bahagia.'
 }
 
+export const whatsapp = "https://api.whatsapp.com/send/?phone=6281231994893&text=Hallo%0ASaya+ingin+tahu+informasi+lebih+lanjut+tentang+Sakinah+Residence&type=phone_number&app_absent=0"
+
+export const specifications = [
+    {
+        title: "Pondasi",
+        value: "Pasangan batu kali"
+    },
+    {
+        title: "Struktur",
+        value: "Beton bertulang"
+    },
+    {
+        title: "Dinding",
+        value: "Pasangan bata"
+    },
+    {
+        title: "Atap",
+        value: "Rangka galvalum & genteng beton"
+    },
+    {
+        title: "Pintu depan",
+        value: "Pintu panel"
+    },
+    {
+        title: "Plafon",
+        value: "Rangka galvalum"
+    },
+    {
+        title: "Sanitasi",
+        value: "Kloset jongkok (air bersih)"
+    },
+    {
+        title: "Listrik",
+        value: "900 watt"
+    }
+]
+
+export const durations = [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+]
+
+export const credits = [
+    10_000_000,
+    25_000_000,
+    50_000_000,
+    60_000_000,
+    70_000_000,
+    80_000_000,
+    90_000_000,
+    100_000_000,
+    110_000_000,
+    120_000_000,
+    123_000_000,
+    130_000_000,
+    133_000_000,
+    143_000_000
+]
+
+export const rate = 0.004

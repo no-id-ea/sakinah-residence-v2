@@ -19,6 +19,7 @@ const ProductBrand = () => {
             key={index}
             title={item.title}
             description={item.description}
+            href={item.href}
             image={item.image}
           />
         ))}

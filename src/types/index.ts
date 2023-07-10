@@ -15,6 +15,7 @@ export interface InfoSideProps {
 export interface ProductCardProps {
     title: string;
     description: string;
+    href: string;
     children?: React.ReactNode;
     image?: string;
 }

@@ -1,14 +1,21 @@
+import Link from "next/link";
 import { ProductCard, YellowButton } from "@/components";
-import { product, products } from "@/constants";
 import { BsWhatsapp } from "react-icons/bs";
+
+import { product, products, whatsapp } from "@/constants";
 
 const AskMarketing = () => {
   return (
     <YellowButton>
-      <BsWhatsapp className="text-[20px] text-snow" />
-      <span className="font-montserrat font-semibold text-[18px] text-snow">
-        TANYA MARKETING
-      </span>
+      <Link
+        href={whatsapp}
+        className="flex flex-row items-center justify-center gap-3"
+      >
+        <BsWhatsapp className="text-[20px] text-snow" />
+        <span className="font-montserrat font-semibold text-[18px] text-snow">
+          TANYA MARKETING
+        </span>
+      </Link>
     </YellowButton>
   );
 };
@@ -31,6 +38,7 @@ const Product = () => {
             key={index}
             title={item.title}
             description={item.description}
+            href={item.href}
             image={item.image}
           >
             <AskMarketing />

@@ -16,3 +16,10 @@ export { default as AboutUs } from './AboutUs'
 export { default as VideoProfile } from './VideoProfile'
 
 export { default as Contact } from './Contact'
+
+export { default as Specification } from './Specification'
+export { default as Denah } from './Denah'
+export { default as ProductFacilities } from './ProductFacilities'
+export { default as Siteplan } from './Siteplan'
+export { default as ProductLocation } from './ProductLocation'
+export { default as Calculator } from './Calculator'
