@@ -65,11 +65,11 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Banner />
+      {/* <Banner />
       <Info />
       <Product />
       <Faq />
-      <Branding />
+      <Branding /> */}
     </>
   );
 }

@@ -78,7 +78,6 @@ export default function RootLayout({ children }: ChildrenProps) {
           pauseOnHover
           theme="light"
         />
-        {/* Same as */}
         <Navbar />
         {children}
         <Footer />
