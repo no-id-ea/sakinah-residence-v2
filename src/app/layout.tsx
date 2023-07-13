@@ -60,11 +60,6 @@ const lato = localFont({
   variable: "--font-lato",
 });
 
-export const metadata = {
-  title: "Sakinah Residence - Rumah Sehat Spek Hebat Harga Hemat",
-  description: "Hallo ini sakinah residence",
-};
-
 export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en">

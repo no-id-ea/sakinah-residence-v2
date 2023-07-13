@@ -23,7 +23,7 @@ export const navigations = [
     },
     {
         name: 'Promo',
-        path: '/promo'
+        path: '/promos'
     },
     {
         name: 'Contact',
@@ -50,7 +50,7 @@ export const links = [
     },
     {
         name: 'Promo',
-        path: '/promo'
+        path: '/promos'
     },
     {
         name: 'Contact',
@@ -264,3 +264,5 @@ export const credits = [
 ]
 
 export const rate = 0.004
+
+export const api = "https://cms.sakinahresidence.com/wp-json/wp/v2/promos"

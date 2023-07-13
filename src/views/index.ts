@@ -23,3 +23,5 @@ export { default as ProductFacilities } from './ProductFacilities'
 export { default as Siteplan } from './Siteplan'
 export { default as ProductLocation } from './ProductLocation'
 export { default as Calculator } from './Calculator'
+
+export { default as AllPromos } from './AllPromos'

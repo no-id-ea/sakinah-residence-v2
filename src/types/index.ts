@@ -58,3 +58,17 @@ export interface DescriptionProps {
 export interface SpecificationProps {
     name: string;
 }
+
+export interface PromoProps {
+    date: string;
+    slug: string;
+    acf: {
+        publisher: string;
+        image: {
+            url: string;
+            name: string;
+        },
+        caption: string;
+        information: string;
+    }
+}
