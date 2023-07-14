@@ -69,7 +69,7 @@ export default function Home() {
       <Info />
       <Product />
       <Faq />
-      {/* <Branding /> */}
+      <Branding />
     </>
   );
 }

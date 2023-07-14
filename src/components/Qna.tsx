@@ -5,17 +5,17 @@ const Qna = ({ question, answer }: QnaProps) => {
     <div className="bg-transparent collapse collapse-arrow text-shadow">
       <input type="checkbox" /> 
       <div className="collapse-title">
-        <p className="font-lato font-medium text-[28px]">
+        <p className="text-xl font-normal md:text-2xl font-lato">
           {question}
         </p>
       </div>
       <div className="collapse-content">
-        <p className="font-lato font-normal text-[20px]">
+        <p className="text-base font-normal font-lato md:text-lg">
           {answer}
         </p>
       </div>
 
-      <div className="mx-5 border-b-2 border-shadow" />
+      <div className="mx-4 border-b-2 border-shadow" />
     </div>
   );
 };

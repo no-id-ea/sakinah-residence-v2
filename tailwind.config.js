@@ -18,6 +18,7 @@ module.exports = {
         "product-1": 'url("/images/product-1.jpg")',
         "product-2": 'url("/images/product-2.jpg")',
         "product-3": 'url("/images/product-3.jpg")',
+        "branding": 'url("/images/branding-3.jpg")',
         "product-card": 'url("/Image-2.jpg")',
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

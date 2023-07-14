@@ -107,13 +107,13 @@ export const products = [
     },
     {
         title: 'Griya Mega Sakinah',
-        description: 'Perumahan kami menawarkan spesifikasi yang menakjubkan untuk menciptakan lingkungan yang asri dan nyaman bagi para penghuninya.',
+        description: 'Menghadirkan hunian dengan rumah sehat, speck hebat, dan harga hemat serta menjaga kualitas bangunan yang dapat diandalkan',
         image: '/images/product-2.jpg',
         href: '/products/griya-mega-sakinah'
     },
     {
         title: 'Mutiara Sakinah',
-        description: 'Perumahan kami menawarkan spesifikasi yang menakjubkan untuk menciptakan lingkungan yang asri dan nyaman bagi para penghuninya.',
+        description: 'Mengembangkan hunian perumahan dengan rumah sehat, speck hebat, dan harga hemat. Sehingga terwujud pemukiman yang aman dan asri.',
         image: '/images/product-3.jpg',
         href: '/products/mutiara-sakinah'
     }
@@ -137,14 +137,14 @@ export const faqs: QnaProps[] = [
         question: "Metode pambayaran yang bisa dilakukan di Karya Cipta Sakinah?",
         answer: "Karya Cipta Sakinah Paiton menyediakan beberapa metode pembayaran yang bisa dijadikan opsi saat membeli rumah. Diantaranya adalah cash keras, inhouse atau lewat skema cicilan kredit pembiayaan rumah (KPR).",
     },
-    {
-        question: "Bank apa saja yang berkerja sama dengan Karya Cipta Sakinah?",
-        answer: "Bank yang sudah berkerja sama dengan Karya Cipta Sakinah adalah BCA, Mandiri, BNI, CIMB Niaga, dan DANAMON."
-    },
-    {
-        question: "Apa ada promo yang sedang berlangsung di Karya Cipta Sakinah?",
-        answer: "Untuk melihat promo yang sedang berlangsung, Anda bisa mengunjungi halam promo di sini."
-    }
+    // {
+    //     question: "Bank apa saja yang berkerja sama dengan Karya Cipta Sakinah?",
+    //     answer: "Bank yang sudah berkerja sama dengan Karya Cipta Sakinah adalah BCA, Mandiri, BNI, CIMB Niaga, dan DANAMON."
+    // },
+    // {
+    //     question: "Apa ada promo yang sedang berlangsung di Karya Cipta Sakinah?",
+    //     answer: "Untuk melihat promo yang sedang berlangsung, Anda bisa mengunjungi halam promo di sini."
+    // }
 ]
 
 export const facilities = [
