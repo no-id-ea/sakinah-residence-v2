@@ -67,9 +67,9 @@ export default function Home() {
     <>
       <Banner />
       <Info />
-      <Product />
-      <Faq />
-      <Branding />
+      {/* <Product /> */}
+      {/* <Faq /> */}
+      {/* <Branding /> */}
     </>
   );
 }

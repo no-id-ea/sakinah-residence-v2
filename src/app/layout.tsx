@@ -17,12 +17,12 @@ const generalSans = localFont({
     {
       path: "../../public/fonts/GeneralSans-Semibold.woff2",
       weight: "600",
-      style: "normal",
+      style: "semi-bold",
     },
     {
       path: "../../public/fonts/GeneralSans-Bold.woff2",
       weight: "700",
-      style: "normal",
+      style: "bold",
     },
   ],
   variable: "--font-general",
@@ -31,9 +31,24 @@ const generalSans = localFont({
 const montserrat = localFont({
   src: [
     {
+      path: "../../public/fonts/Montserrat-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Montserrat-Medium.ttf",
+      weight: "500",
+      style: "medium",
+    },
+    {
       path: "../../public/fonts/Montserrat-SemiBold.ttf",
       weight: "600",
-      style: "normal",
+      style: "semi-bold",
+    },
+    {
+      path: "../../public/fonts/Montserrat-Bold.ttf",
+      weight: "700",
+      style: "bold",
     },
   ],
   variable: "--font-montserrat",

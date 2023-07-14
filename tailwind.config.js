@@ -14,7 +14,7 @@ module.exports = {
         lato: ["var(--font-lato)"],
       },
       backgroundImage: {
-        "banner-hero": 'url("/banner1.jpg")',
+        "banner-hero": 'url("/images/bg-hero.jpg")',
         "product-card": 'url("/Image-2.jpg")',
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
