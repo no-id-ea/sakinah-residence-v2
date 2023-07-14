@@ -77,13 +77,13 @@ export const informations = [
     {
         title: 'Temukan Tempat Tinggal yang Tak Tertandingi',
         description: 'Kami menawarkan fasilitas yang menghadirkan pengalaman hidup yang luar biasa bagi para penghuninya. Setiap detail telah dirancang dengan teliti untuk memenuhi kebutuhan dan keinginan Anda, memberikan kualitas tinggi dan kenyamanan tak tergantikan.',
-        image: '/Image-1.png',
+        image: '/images/branding-1.jpg',
         reverse: false
     },
     {
         title: 'Fasilitas Lengkap, Harga Terjangkau, Kualitas Hebat!',
         description: 'Perumahan kami menawarkan fasilitas lengkap dan terjangkau yang dirancang untuk memenuhi kebutuhan dan kenyamanan Anda. Dengan memberikan keseimbangan sempurna antara kualitas, nilai, dan fasilitas yang diberikan.',
-        image: '/Image-1.png',
+        image: '/images/branding-2.jpg',
         reverse: true
     }
 ]
