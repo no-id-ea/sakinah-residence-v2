@@ -68,7 +68,7 @@ export default function Home() {
       <Banner />
       <Info />
       <Product />
-      {/* <Faq /> */}
+      <Faq />
       {/* <Branding /> */}
     </>
   );

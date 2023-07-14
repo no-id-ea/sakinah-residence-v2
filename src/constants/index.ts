@@ -102,19 +102,19 @@ export const products = [
     {
         title: 'Sakinah Residence',
         description: 'Perumahan kami menawarkan spesifikasi yang menakjubkan untuk menciptakan lingkungan yang asri dan nyaman bagi para penghuninya.',
-        image: '/Image-2.jpg',
+        image: '/images/product-1.jpg',
         href: '/products/sakinah-residence'
     },
     {
         title: 'Griya Mega Sakinah',
         description: 'Perumahan kami menawarkan spesifikasi yang menakjubkan untuk menciptakan lingkungan yang asri dan nyaman bagi para penghuninya.',
-        image: '/Image-2.jpg',
+        image: '/images/product-2.jpg',
         href: '/products/griya-mega-sakinah'
     },
     {
         title: 'Mutiara Sakinah',
         description: 'Perumahan kami menawarkan spesifikasi yang menakjubkan untuk menciptakan lingkungan yang asri dan nyaman bagi para penghuninya.',
-        image: '/Image-2.jpg',
+        image: '/images/product-3.jpg',
         href: '/products/mutiara-sakinah'
     }
 

@@ -16,8 +16,8 @@ export interface ProductCardProps {
     title: string;
     description: string;
     href: string;
+    image: string;
     children?: React.ReactNode;
-    image?: string;
 }
 
 export interface QnaProps {
