@@ -150,19 +150,35 @@ export const faqs: QnaProps[] = [
 export const facilities = [
     {
         title: "Musholla",
-        src: "/musholla.png"
+        src: "/images/musholla.png"
+    },
+    {
+        title: "Drainase",
+        src: "/images/drainase.png"
     },
     {
         title: "Jalan Paving 7 Meter",
-        src: "/jalan.png"
+        src: "/images/jalan.png"
     },
     {
-        title: "Gratis Warna Cat",
-        src: "/warna.png"
+        title: "Angsuran Flat",
+        src: "/images/angsuran.png"
     },
     {
-        title: "Gratis Pagar Samping",
-        src: "/pagar.png"
+        title: "Free Pagar Samping",
+        src: "/images/pagar.png"
+    },
+    {
+        title: "Free AJB + Balik Nama",
+        src: "/images/ajb.png"
+    },
+    {
+        title: "Free Warna Cat",
+        src: "/images/warna.png"
+    },
+    {
+        title: "Free Kanopi + Atap Dapur",
+        src: "/images/kanopi.png"
     }
 ]
 

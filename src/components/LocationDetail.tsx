@@ -4,15 +4,15 @@ import { LocationDetailProps } from "@/types";
 
 const LocationDetail = ({ address, gmaps, title, reverse }: LocationDetailProps) => {
   return (
-    <div className={`flex ${reverse ? "flex-row-reverse" : "flex-row"} gap-28 items-center justify-center w-full h-full min-h-[400px] my-12`}>
+    <div className={`flex ${reverse ? "flex-col gap-5 md:flex-row-reverse md:gap-20" : "flex-col gap-5 md:flex-row md:gap-20"} items-center justify-center w-full h-full min-h-[400px] my-12`}>
       <div className="flex flex-col items-start justify-center h-full">
-        <p className="font-lato font-medium text-[24px] text-grey">
+        <p className="text-base font-normal font-lato md:text-lg text-grey">
           Lokasi Komplek
         </p>
-        <h3 className="font-lato font-bold text-[48px] text-shadow">{title}</h3>
+        <h3 className="text-2xl font-bold font-lato md:text-3xl lg:text-4xl text-shadow">{title}</h3>
         <div className="flex flex-row items-start justify-start w-full space-x-5">
           <FaLocationDot className="text-[24px] text-shadow" />
-          <p className="font-lato font-normal text-[20px] text-grey">
+          <p className="text-base font-normal font-lato md:text-lg lg:text-xl text-grey">
             {address}
           </p>
         </div>
