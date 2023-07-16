@@ -9,6 +9,13 @@
   height: unset !important;
 }
 
+.custom2-img {
+  object-fit: contain;
+  width: unset !important;
+  position: relative !important;
+  height: 100% !important;
+}
+
 .unset-img {
   width: 100%;
 }
