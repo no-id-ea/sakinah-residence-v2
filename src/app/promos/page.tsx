@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { CustomBanner, AllPromos } from "@/views";
-import axios from "axios";
 
 import { PromoProps } from "@/types";
 import { api } from "@/constants";
@@ -67,10 +66,8 @@ export const metadata: Metadata = {
 
 
 async function getPromos(): Promise<PromoProps[]> {
-  const response = await axios.get<PromoProps[]>(api);
-  const promos = response.data;
-
-  return promos;
+  const res = await fetch(api, { cache: "no-store"} );
+  return await res.json();
 }
 
 export default async function Promos() {

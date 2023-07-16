@@ -25,3 +25,4 @@ export { default as ProductLocation } from './ProductLocation'
 export { default as Calculator } from './Calculator'
 
 export { default as AllPromos } from './AllPromos'
+export { default as Promo } from './Promo'

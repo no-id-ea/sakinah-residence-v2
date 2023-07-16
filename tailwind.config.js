@@ -37,6 +37,8 @@ module.exports = {
         "wood-2": "#EDE8D9",
         furniture: "#311C0B",
         gandalf: "#4F4F4F",
+        leaf: "#219653",
+        "leaf-2": "#069e45",
       },
     },
   },

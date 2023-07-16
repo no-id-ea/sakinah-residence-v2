@@ -1,6 +1,5 @@
 import { Metadata } from "next";
-import axios from "axios";
-
+import { CustomBanner, Promo } from "@/views";
 import { PromoProps } from "@/types";
 import { api } from "@/constants";
 
@@ -39,12 +38,12 @@ export const metadata: Metadata = {
   publisher: "Sakinah Residence",
   colorScheme: "light dark",
   themeColor: "#ffffff",
-  metadataBase: new URL('https://sakinahresidence.com'),
+  metadataBase: new URL("https://sakinahresidence.com"),
   alternates: {
     canonical: "/",
     languages: {
       id: "/",
-    }
+    },
   },
   openGraph: {
     title: "Sakinah Residence - Rumah Sehat Spek Hebat Harga Hemat",
@@ -64,14 +63,22 @@ export const metadata: Metadata = {
   },
 };
 
-
 async function getPromos(slug: string): Promise<PromoProps[]> {
-  const response = await axios.get<PromoProps[]>(`${api}?slug=${slug}`);
-  const promos = response.data;
-
-  return promos;
+  const res = await fetch(`${api}?slug=${slug}`, { cache: "no-cache" });
+  return await res.json();
 }
 
-export default function DetailPromo ({ params }: { params: { slug: string } }) {
-  return <div>My Post: {params.slug}</div>
+export default async function DetailPromo({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const promo = await getPromos(params.slug);
+
+  return (
+    <>
+      <CustomBanner title="Karya Cipta Sakinah" />
+      <Promo {...promo[0]} />
+    </>
+  );
 }
