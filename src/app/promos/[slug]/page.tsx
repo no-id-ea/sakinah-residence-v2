@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { CustomBanner, AllPromos } from "@/views";
 import axios from "axios";
 
 import { PromoProps } from "@/types";
@@ -66,20 +65,13 @@ export const metadata: Metadata = {
 };
 
 
-async function getPromos(): Promise<PromoProps[]> {
-  const response = await axios.get<PromoProps[]>(api);
+async function getPromos(slug: string): Promise<PromoProps[]> {
+  const response = await axios.get<PromoProps[]>(`${api}?slug=${slug}`);
   const promos = response.data;
 
   return promos;
 }
 
-export default async function Promos() {
-  const promos = await getPromos();
-  
-  return (
-    <>
-      <CustomBanner title="Promo" />
-      <AllPromos promos={promos} />
-    </>
-  );
+export default function DetailPromo ({ params }: { params: { slug: string } }) {
+  return <div>My Post: {params.slug}</div>
 }

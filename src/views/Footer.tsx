@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="flex flex-col items-start justify-start w-full space-y-4">
           <div className="flex items-start justify-start w-44 md:w-52 lg:w-64 unset-img">
             <Image
-              src={"/logo-sakinah.png"}
+              src={"/images/logo-sakinah.png"}
               alt="Logo Perumahan Sakinah Residence"
               fill={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

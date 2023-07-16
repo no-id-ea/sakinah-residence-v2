@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { whatsapp } from "@/constants";
+import { whatsapp, youtubeURL } from "@/constants";
 
 const VideoProfile = () => {
   return (
@@ -25,7 +25,7 @@ const VideoProfile = () => {
             </button>
           </div>
             <iframe
-              src="https://www.youtube.com/embed/dtV39_DKauo"
+              src={youtubeURL}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen={true}

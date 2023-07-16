@@ -25,9 +25,9 @@ const Navbar = () => {
     <header className="fixed top-0 z-10 flex items-center justify-center w-full drawer drawer-end backdrop-blur-3xl bg-snow-3">
       <input id="navbar-drawer" checked={isMenuOpen} onChange={handleMenuChange} type="checkbox" className="drawer-toggle" />
       <nav className="drawer-content flex flex-row items-center justify-between w-full max-w-[1440px] px-14">
-        <Link href={"/"}>
+        <Link href={"/"} className='py-2'>
           <Image
-            src="/logo-sakinah.png"
+            src="/images/logo-sakinah.png"
             width={100}
             height={100}
             alt="Logo Sakinah"

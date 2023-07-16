@@ -279,6 +279,15 @@ export const credits = [
     143_000_000
 ]
 
-export const rate = 0.004
+export const rate: number = 0.004
 
-export const api = "https://cms.sakinahresidence.com/wp-json/wp/v2/promos"
+export const api: string = "https://cms.sakinahresidence.com/wp-json/wp/v2/promos"
+
+export const youtubeURL: string = "https://www.youtube.com/embed/yXMJ_a7OjUg"
+
+export const contacts = {
+    alamat: "Perumahan Sakinah Residence No. 01 Sumberanyar, Paiton, Kab. Probolinggo",
+    email: "griyakusakinahku16@gmail.com",
+    telp: "+6281234567890",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.6960209608606!2d113.51602677431313!3d-7.715729092302189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7038484881b23%3A0x481b10811d2e42c7!2sSakinah%20Residence!5e0!3m2!1sen!2sid!4v1688873361538!5m2!1sen!2sid"
+}
