@@ -4,13 +4,13 @@ import { ImageSwiperProps } from "@/types";
 
 const ImageSwiper = ({ src, alt }: ImageSwiperProps) => {
   return (
-    <div className="flex w-full h-full unset-img">
+    <div className="relative w-full h-screen">
       <Image
         src={src}
         alt={alt}
         fill={true}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="object-cover object-center w-full h-full custom-img"
+        style={{ width: '100%', height: '100%' }}
+        className="object-cover object-center w-full h-full"
       />
     </div>
   );
