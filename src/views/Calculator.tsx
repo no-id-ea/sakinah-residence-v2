@@ -89,9 +89,9 @@ const Calculator = () => {
         </h2>
 
         <div className="flex flex-col items-center justify-center w-full h-full gap-10 md:flex-row lg:gap-20">
-          <div className="flex flex-row items-start justify-start h-full gap-10 md:flex-row lg:gap-20">
+          <div className="flex flex-row items-start justify-start h-full gap-5 md:flex-row md:gap-10 lg:gap-20">
             <div className="flex flex-col items-start justify-start w-full h-full space-y-3">
-              <p className="text-lg font-semibold font-lato md:text-xl lg:text-2xl text-shadow">
+              <p className="text-sm font-semibold font-lato md:text-base lg:text-lg text-shadow whitespace-nowrap">
                 Kredit Maksimum
               </p>
               <select
@@ -112,7 +112,7 @@ const Calculator = () => {
             </div>
 
             <div className="flex flex-col items-start justify-start w-full h-full space-y-3">
-              <p className="text-lg font-semibold font-lato md:text-xl lg:text-2xl text-shadow">
+              <p className="text-sm font-semibold font-lato md:text-base lg:text-lg text-shadow whitespace-nowrap">
                 Jangka Waktu
               </p>
               <select
