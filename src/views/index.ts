@@ -7,6 +7,7 @@ export { default as Footer } from './Footer'
 
 export { default as CustomBanner } from './CustomBanner'
 export { default as ProductBrand } from './ProductBrand'
+export { default as ProductSwiper } from './ProductSwiper'
 
 export { default as Facilities } from './Facilities'
 

@@ -86,3 +86,12 @@ export interface PromoProps {
         information: string;
     }
 }
+
+export interface ImageSwiperProps {
+    src: string;
+    alt: string;
+}
+
+export interface SwiperContainerProps {
+    images: ImageSwiperProps[];
+}

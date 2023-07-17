@@ -211,6 +211,8 @@ export const about = {
     misi: 'Menjadi perumahan yang diakui sebagai tempat yang nyaman, harmonis, dan penuh kedamaian, di mana setiap penghuninya dapat menjalani kehidupan yang berkualitas tinggi dan bahagia.'
 }
 
+export const gTag = "G-TR9BB5H0L8"
+
 export const whatsapp = "https://api.whatsapp.com/send/?phone=6281231994893&text=Hallo%0ASaya+ingin+tahu+informasi+lebih+lanjut+tentang+Sakinah+Residence&type=phone_number&app_absent=0"
 
 export const specifications = [
@@ -311,4 +313,61 @@ export const brochures = {
         siteplan: "/images/siteplan-griya.jpg",
         location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.4201061849622!2d113.52317944338824!3d-7.7173971125581415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd703d480bcfb63%3A0x8b56076d47cb0f13!2sPerumahan%20mutiara%20sakinah!5e0!3m2!1sen!2sid!4v1688875077374!5m2!1sen!2sid"
     }
+}
+
+export const productImages = {
+    sakinah: [
+        {
+            src: "/images/sakinah-1.jpg",
+            alt: "Sakinah Residence"
+        },
+        {
+            src: "/images/sakinah-2.jpg",
+            alt: "Sakinah Residence"
+        },
+        {
+            src: "/images/sakinah-3.jpg",
+            alt: "Sakinah Residence"
+        },
+        {
+            src: "/images/sakinah-4.jpg",
+            alt: "Sakinah Residence"
+        }
+    ],
+    mutiara: [
+        {
+            src: "/images/mutiara-1.jpg",
+            alt: "Mutiara Sakinah"
+        },
+        {
+            src: "/images/mutiara-2.jpg",
+            alt: "Mutiara Sakinah"
+        },
+        {
+            src: "/images/mutiara-3.jpg",
+            alt: "Mutiara Sakinah"
+        },
+        {
+            src: "/images/mutiara-4.jpg",
+            alt: "Mutiara Sakinah"
+        }
+    ],
+    griya: [
+        {
+            src: "/images/griya-1.jpg",
+            alt: "Griya Mega Sakinah"
+        },
+        {
+            src: "/images/griya-2.jpg",
+            alt: "Griya Mega Sakinah"
+        },
+        {
+            src: "/images/griya-3.jpg",
+            alt: "Griya Mega Sakinah"
+        },
+        {
+            src: "/images/griya-4.jpg",
+            alt: "Griya Mega Sakinah"
+        }
+    ]
 }

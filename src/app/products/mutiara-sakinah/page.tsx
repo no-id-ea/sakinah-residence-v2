@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import {
   Calculator,
-  CustomBanner,
   Denah,
   ProductFacilities,
   ProductLocation,
+  ProductSwiper,
   Siteplan,
   Specification,
 } from "@/views";
 
-import { brochures } from "@/constants";
+import { brochures, productImages } from "@/constants";
 
 export const metadata: Metadata = {
   title: {
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
 export default function Product() {
   return (
     <>
-      <CustomBanner title="Mutiara Sakinah" />
+      <ProductSwiper images={productImages.mutiara} />
       <Specification name="Mutiara Sakinah" brochure={brochures.mutiara} />
       <Calculator />
       <Denah />

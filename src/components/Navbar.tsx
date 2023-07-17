@@ -1,31 +1,44 @@
 "use client";
 
-import { useState } from 'react'
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RiMenuFill, RiMenuFoldLine } from "react-icons/ri";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 import { navigations } from "@/constants";
+
+import { useScrollDirection } from "@/hooks";
 
 const Navbar = () => {
   // Local states
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const scrollDirection = useScrollDirection();
 
   // Handle menu change
   const handleMenuChange = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   // Get current pathname
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 z-10 flex items-center justify-center w-full drawer drawer-end backdrop-blur-3xl bg-snow-3">
-      <input id="navbar-drawer" checked={isMenuOpen} onChange={handleMenuChange} type="checkbox" className="drawer-toggle" />
+    <header
+      className={`fixed ${
+        scrollDirection === "down" ? "-top-24" : "top-0"
+      } z-10 flex items-center justify-center w-full drawer drawer-end backdrop-blur-3xl transition-all duration-500 bg-snow-3`}
+    >
+      <input
+        id="navbar-drawer"
+        checked={isMenuOpen}
+        onChange={handleMenuChange}
+        type="checkbox"
+        className="drawer-toggle"
+      />
       <nav className="drawer-content flex flex-row items-center justify-between w-full max-w-[1440px] px-14">
-        <Link href={"/"} className='py-2'>
+        <Link href={"/"} className="py-2">
           <Image
             src="/images/logo-sakinah.png"
             width={100}
@@ -36,31 +49,23 @@ const Navbar = () => {
         </Link>
 
         <label htmlFor="navbar-drawer" className="flex lg:hidden">
-        <motion.div
-              className="flex items-center justify-center rounded-full"
-              layout
-              transition={
-                {
-                  type: 'tween',
-                  ease: 'easeInOut',
-                  duration: 0.5
-                }
-              }
-            >
-              <motion.div whileTap={{ rotate: 90 }} >
-                {isMenuOpen
-                  ? (
-                  <RiMenuFoldLine
-                    className="text-[28px] text-shadow cursor-pointer"
-                  />
-                    )
-                  : (
-                  <RiMenuFill
-                    className="text-[28px] text-shadow cursor-pointer"
-                  />
-                    )}
-              </motion.div>
+          <motion.div
+            className="flex items-center justify-center rounded-full"
+            layout
+            transition={{
+              type: "tween",
+              ease: "easeInOut",
+              duration: 0.5,
+            }}
+          >
+            <motion.div whileTap={{ rotate: 90 }}>
+              {isMenuOpen ? (
+                <RiMenuFoldLine className="text-[28px] text-shadow cursor-pointer" />
+              ) : (
+                <RiMenuFill className="text-[28px] text-shadow cursor-pointer" />
+              )}
             </motion.div>
+          </motion.div>
         </label>
 
         <div className="flex-row hidden space-x-8 lg:flex">

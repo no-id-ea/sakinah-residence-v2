@@ -1,11 +1,14 @@
 import localFont from "next/font/local";
+import Script from "next/script";
 import { Footer } from "@/views";
 import { Navbar } from "@/components";
 import { ToastContainer } from "react-toastify";
 
 import { ChildrenProps } from "@/types";
 import "./globals.css";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
+
+import { gTag } from "@/constants";
 
 const generalSans = localFont({
   src: [
@@ -97,6 +100,16 @@ export default function RootLayout({ children }: ChildrenProps) {
         {children}
         <Footer />
         <ToastContainer />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${gTag}`} />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', '${gTag}');
+        `}
+        </Script>
       </body>
     </html>
   );
