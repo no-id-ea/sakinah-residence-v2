@@ -55,8 +55,22 @@ export interface DescriptionProps {
     description: string;
 }
 
+export interface DownloadProps {
+    name: string;
+    url: string;
+}
+
+export interface SitePlanProps {
+    siteplan: string;
+}
+
+export interface ProductLocationProps {
+    location: string;
+}
+
 export interface SpecificationProps {
     name: string;
+    brochure: DownloadProps;
 }
 
 export interface PromoProps {

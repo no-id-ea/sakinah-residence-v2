@@ -4,7 +4,7 @@ import { InfoSide } from "@/components";
 
 const Info = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-full h-full py-20 md:py-28 lg:py-32 gradient-info text-shadow">
+    <section id="get-started" className="flex flex-col items-center justify-center w-full h-full py-20 md:py-28 lg:py-32 gradient-info text-shadow">
       <div className="flex flex-col items-center justify-center w-full h-full max-w-[1440px] px-14 gap-10 bg-transparent">
         {informations.map((info, idx) => (
           <InfoSide

@@ -79,19 +79,19 @@ const Calculator = () => {
       return;
     }
 
-    setResult(countPMT(rate, loanDuration * 12, loanCredit, 0, 0))
+    setResult(countPMT(rate, loanDuration * 12, loanCredit, 0, 0));
   };
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full py-20 bg-snow">
-      <div className="flex flex-col w-full h-full max-w-[1440px] px-10 space-y-10">
-        <h2 className="font-lato font-bold text-[48px] text-shadow text-center">
+    <div className="flex flex-col items-center justify-center w-full h-full py-4 md:py-6 lg:py-10 bg-snow">
+      <div className="flex flex-col w-full h-full max-w-[1440px] px-14 space-y-10">
+        <h2 className="text-3xl font-bold text-center font-lato md:text-4xl lg:text-5xl text-shadow">
           Kalkulator KPR
         </h2>
 
-        <div className="flex flex-row items-center justify-center w-full h-full gap-20">
-          <div className="flex flex-row items-start justify-start h-full gap-20">
+        <div className="flex flex-col items-center justify-center w-full h-full gap-10 md:flex-row lg:gap-20">
+          <div className="flex flex-row items-start justify-start h-full gap-10 md:flex-row lg:gap-20">
             <div className="flex flex-col items-start justify-start w-full h-full space-y-3">
-              <p className="font-lato font-semibold text-[24px] text-shadow">
+              <p className="text-lg font-semibold font-lato md:text-xl lg:text-2xl text-shadow">
                 Kredit Maksimum
               </p>
               <select
@@ -106,13 +106,13 @@ const Calculator = () => {
                   </option>
                 ))}
               </select>
-              <p className="font-lato font-normal text-[16px] text-grey">
+              <p className="text-xs font-normal font-lato md:text-sm lg:text-base text-grey">
                 *Bunga KPR 5% untuk rumah bersubsidi
               </p>
             </div>
 
             <div className="flex flex-col items-start justify-start w-full h-full space-y-3">
-              <p className="font-lato font-semibold text-[24px] text-shadow">
+              <p className="text-lg font-semibold font-lato md:text-xl lg:text-2xl text-shadow">
                 Jangka Waktu
               </p>
               <select
@@ -131,24 +131,27 @@ const Calculator = () => {
           </div>
 
           <div className="flex items-center justify-center h-full">
-            <YellowButton onClick={countCredit}>
-              <span className="font-montserrat font-semibold text-[18px] text-snow px-5 ">
+            <button
+              className="flex flex-row items-center justify-center space-x-1 cursor-pointer bg-orange rounded-[5px] py-[12px] hover:bg-orange-2 duration-150 transition-all ease-in-out"
+              onClick={countCredit}
+            >
+              <span className="px-5 text-sm font-semibold font-montserrat md:text-base lg:text-lg text-snow ">
                 Hitung
               </span>
-            </YellowButton>
+            </button>
           </div>
         </div>
 
         <div
           className={`${
             result === 0 ? "hidden" : "flex"
-          } flex-row items-center justify-center h-full gap-20`}
+          } flex-col items-center justify-center h-full gap-20`}
         >
           <div className="flex flex-col items-center justify-center h-full px-20 py-5 space-y-3 bg-wood-2 rounded-xl drop-shadow-lg">
-            <p className="font-lato font-normal text-[16px] text-shadow text-center">
+            <p className="text-sm font-normal text-center font-lato md:text-base lg:text-lg text-shadow">
               Angsuran per Bulan
             </p>
-            <p className="font-lato font-semibold text-[24px] text-shadow text-center">
+            <p className="text-base font-semibold text-center font-lato md:text-lg lg:text-xl text-shadow">
               {displayRupiah(result)}
             </p>
           </div>
