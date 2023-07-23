@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 
 
 async function getPromos(): Promise<PromoProps[]> {
-  const res = await fetch(api, { cache: "no-store"} );
+  const res = await fetch(api, { next: { revalidate: 60 }} );
   return await res.json();
 }
 

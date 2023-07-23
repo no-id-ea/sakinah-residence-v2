@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 };
 
 async function getPromos(slug: string): Promise<PromoProps[]> {
-  const res = await fetch(`${api}?slug=${slug}`, { cache: "no-cache" });
+  const res = await fetch(`${api}?slug=${slug}`, { next: { revalidate: 60 }});
   return await res.json();
 }
 
