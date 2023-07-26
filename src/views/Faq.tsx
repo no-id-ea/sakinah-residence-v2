@@ -26,11 +26,10 @@ const Faq = () => {
             <div className="collapse-content">
               <p className="text-base font-normal font-lato md:text-lg">
                 Bank yang sudah berkerja sama dengan Karya Cipta Sakinah adalah{" "}
-                <span className="font-bold">BCA</span>,{" "}
-                <span className="font-bold">Mandiri</span>,{" "}
                 <span className="font-bold">BNI</span>,{" "}
-                <span className="font-bold">CIMB Niaga</span>, dan{" "}
-                <span className="font-bold">DANAMON</span>.
+                <span className="font-bold">BSI</span>,{" "}
+                <span className="font-bold">BTN Syariah</span>, dan{" "}
+                <span className="font-bold">BRI</span>{" "}.
               </p>
             </div>
 

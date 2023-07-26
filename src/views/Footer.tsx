@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="flex flex-row items-center justify-center space-x-4">
               <BsFillTelephoneFill className="text-xl md:text-2xl" />
               <a
-                href="tel:+6281234567890"
+                href="https://api.whatsapp.com/send/?phone=6281231994893&text=Hallo%0ASaya+ingin+tahu+informasi+lebih+lanjut+tentang+Sakinah+Residence&type=phone_number&app_absent=0"
                 className="text-base font-normal font-lato md:text-xl"
               >
                 +62 812-3456-7890

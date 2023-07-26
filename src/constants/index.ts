@@ -123,7 +123,7 @@ export const products = [
 export const faqs: QnaProps[] = [
     {
         question: "Apa saja keunggulan yang didapatkan dari Karya Cipta Sakinah?",
-        answer: "Keunggulan yang didapatkan dari Karya Cipta Sakinah adalah berada di pusat area residential Paiton Kab. Probolinggo, dilalui oleh jalur garis pantai di bagian utara Pulau Jawa (Pantura), mempunyai fasilitas dan jalan akses yang bagus, hunian bebas polusi, mempunyai sistem keamanan 24 jam, hunian nyaman dan dari developer terpercaya."
+        answer: "Keunggulan yang didapatkan dari Karya Cipta Sakinah adalah mempunyai fasilitas jalan yang luas dan baik. Dengan Rumah Sehat, Harga hemat, dan Speck Hebat. Hunian tepat dan nyaman serta bersumber dari developer terpercaya"
     },
     {
         question: "Dimana alamat lengkap Karya Cipta Sakinah?",
@@ -134,7 +134,7 @@ export const faqs: QnaProps[] = [
         answer: "Harga rumah di Karya Cipta Sakinah sangat beragam tergantung tipe unit rumah yang mau dibelikan. Untuk informasi selanjutnya Anda dapat menghubungi kami via chat marketing setiap hari selama 24 jam. Anda juga bisa klik ke halaman ini."
     },
     {
-        question: "Metode pambayaran yang bisa dilakukan di Karya Cipta Sakinah?",
+        question: "Metode pembayaran yang bisa dilakukan di Karya Cipta Sakinah?",
         answer: "Karya Cipta Sakinah Paiton menyediakan beberapa metode pembayaran yang bisa dijadikan opsi saat membeli rumah. Diantaranya adalah cash keras, inhouse atau lewat skema cicilan kredit pembiayaan rumah (KPR).",
     },
     // {
